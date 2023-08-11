@@ -10,13 +10,9 @@ int main(void)
 	char n = 'a';
 
 	for (a < 10; a++)
-	{
 		putchar(a);
-	}
 	for (n <= 'f'; n++)
-	{
 		putchar(n);
-	}
 	putchar('\n');
 
 	return (0);
