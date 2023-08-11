@@ -7,9 +7,12 @@
 int main(void)
 {
 	int a;
+	char n;
 
 	for (a = 0; a < 10; a++)
 		putchar((a % 10) + '0');
+	for (n = 'a'; n <= 'f'; n++)
+		putchart(n);
 	putchar('\n');
 
 	return (0);
