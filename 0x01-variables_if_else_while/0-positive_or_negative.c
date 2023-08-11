@@ -4,7 +4,9 @@
 /**
  *main - This is the entry point of the code
  *
- *Return : 0 Success
+ *Description: 'the program's description'
+ *
+ *Return:0 Success
  */
 int main(void)
 {
