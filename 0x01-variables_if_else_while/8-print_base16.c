@@ -10,11 +10,15 @@ int main(void)
 	char n;
 
 	while (a < 10)
+	{
 		putchar(a);
 		a++;
+	}
 	while ( n <= 'f')
+	{
 		putchar(n);
 		n++;
+	}
 	putchar('\n');
 
 	return (0);
