@@ -24,7 +24,7 @@ int main(void)
 					if (n != 98 || m != 99)
 					{
 						putchar(',');
-						putchat(' ');
+						putchar(' ');
 					}
 				}
 				m++;
