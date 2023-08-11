@@ -6,10 +6,17 @@
  */
 int main(void)
 {
-	int [i] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'};
-	putchar(nums[i]);
-	putchar(',');
-	putchar(' ');
+	int num;
+	num = 0;
+	while (num <= 9)
+	{
+		putchar(num + '0');
+		if (num < 9)
+		{
+		putchar(',');
+		putchar(' ');
+	}
+        num++;
 	putchar('\n');
 	return (0);
 }
