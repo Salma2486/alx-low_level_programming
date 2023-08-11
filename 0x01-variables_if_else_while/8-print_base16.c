@@ -9,15 +9,13 @@ int main(void)
 	int a = 0;
 	char n = 'a';
 
-	for (a < 10)
+	for (a < 10; a++)
 	{
 		putchar(a);
-		a++;
 	}
-	for (n <= 'f')
+	for (n <= 'f'; n++)
 	{
 		putchar(n);
-		n++;
 	}
 	putchar('\n');
 
