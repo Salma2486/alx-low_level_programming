@@ -4,7 +4,7 @@
  */
 void print_most_numbers(void)
 {
-	char ch = 48;
+	char ch;
 
 	for (ch = 48; ch <= 57; ch++)
 	{
