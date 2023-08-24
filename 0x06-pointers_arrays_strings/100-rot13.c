@@ -3,7 +3,7 @@
  **rot13 - This is the entry point of the code
  *
  *@s: input
- *Return: *s
+ *Return: ptr
  */
 char *rot13(char *s)
 {
@@ -26,4 +26,3 @@ char *rot13(char *s)
 	}
 	return (ptr);
 }
-
