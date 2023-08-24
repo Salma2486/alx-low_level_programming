@@ -7,21 +7,23 @@
  */
 char *rot13(char *s)
 {
-	int i, j;
+	int j;
 	char data1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char data2[] = "NOPQRSTUVWXYZABCDEFGHIJKLMabcdefghijklmnopqrstuvwxyz";
+	char *ptr = s;
 
-	for (i = 0; s[i] != '\0'; i++)
+	while (*s)
 	{
 		for (j = 0; j < 52; j++)
 		{
-			if (s[i] == data1[j])
+			if (*s == data1[j])
 			{
-				s[i] = data2[j];
+				*s = data2[j];
 				break;
 			}
 		}
+		s++;
 	}
-	return (*s);
+	return (ptr);
 }
 
