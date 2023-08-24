@@ -6,24 +6,18 @@
  */
 void print_number(int n)
 {
-	int i;
-        int digit;
-        char buffer[10];
+	unsigned int m;
 
-	if (n == 0)
+	m = n;
+	if (n < 0)
 	{
-		_putchar('0');
-		return;
+		_putchar('-');
+		m = -n;
 	}
-	for (i = 0; n != 0; i++)
+	if (m / 10 != 0)
 	{
-		digit = n % 10;
-		n /= 10;
-		buffer[i] = digit + '0';
+		print_number(m / 10);
 	}
-
-	for (i--; i >= 0; i--)
-	{
-		_putchar(buffer[i]);
-	}
+	_putchar((m % 10) + 48);
 }
+
