@@ -2,38 +2,24 @@
 /**
  **leet - This is the entry point of the code
  *
- *@str: input
+ *@n: input
  *Return:0 Success
  */
-char *leet(char *str)
+char *leet(char *n)
 {
-	int i;
-	char *original = str;
+	int i, j;
+	char s1[] = "aAeEoOtTlL";
+	char s2[] = "4433007711";
 
-	for (i = 0; str[i] != '\0'; i++)
+	for (i = 0; n[i] != '\0'; i++)
 	{
-		char c = str[i];
-
-		if (c == 'a' || c == 'A')
+		for (j = 0; j < 10; j++)
 		{
-			str[i] = '4';
-		}
-		else if (c == 'e' || c == 'E')
-		{
-			str[i] = '3';
-		}
-		else if (c == 'o' || c == 'O')
-		{
-			str[i] = '0';
-		}
-		else if (c == 't' || c == 'T')
-		{
-			str[i] = '7';
-		}
-		else if (c == 'l' || c == 'L')
-		{
-			str[i] = '1';
+			if (n[i] == s1[j])
+			{
+				n[1] = s2[j];
+			}
 		}
 	}
-	return (original);
+	return (n);
 }
