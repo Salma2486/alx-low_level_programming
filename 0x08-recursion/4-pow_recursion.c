@@ -3,7 +3,7 @@
  *_pow_recursion - This is the entry point of the code
  *
  *@x: input 1
- *@y input 2
+ *@y: input 2
  *Return:0 Success
  */
 int _pow_recursion(int x, int y)
