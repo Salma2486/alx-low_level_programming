@@ -10,6 +10,7 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *a;
+	unsigned int i;
 
 	if (s1 == NULL)
 		return (" ");
@@ -18,8 +19,10 @@ char *str_concat(char *s1, char *s2)
 	a = malloc(sizeof(char) * (strlen(s1) + strlen(s2) + 1));
 	if (a == NULL)
 		return (NULL);
-	strcpy(a, s1);
-	strcat(a, s2);
+	for (i = 0; i < strlen(s1); i++)
+		a[i] = s1[i];
+	for (i = 0;i < strlen(s2); i++)
+		a[i + strlen(s1)] = s2[i];
 	return (a);
 }
 
