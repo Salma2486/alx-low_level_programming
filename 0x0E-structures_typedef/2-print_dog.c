@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 /**
- *print_dog - main function
- *@d: input
+ * print_dog - prints a struct dog.
+ * @d: struct dog.
  *
- *Return: 0
+ * Return: no return.
  */
 void print_dog(struct dog *d)
 {
