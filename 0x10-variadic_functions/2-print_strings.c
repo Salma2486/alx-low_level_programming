@@ -2,7 +2,7 @@
 #include <stdarg.h>
 #include <stdio.h>
 /**
- *main - This is the entry point of the code
+ *print_strings - This is the entry point of the code
  *@separator: njnudfsvfs
  *@n: ojunosfusjo
  *Return:0 Success
