@@ -2,7 +2,7 @@
 /**
  *array_iterator - This is the entry point of the code
  *@array: input
- *@size_t: i
+ *@size: i
  *@action: iusfw
  *Return:0 Success
  */
