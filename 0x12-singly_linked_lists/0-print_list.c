@@ -1,8 +1,6 @@
 #include "lists.h"
 /**
  *print_list - This is the entry point of the code
- *@size_t: ujhdsfie
- *@list_t: iuhfwri
  *@h: iudreigr
  *Return:0 Success
  */
