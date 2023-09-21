@@ -1,21 +1,22 @@
 #include "lists.h"
 /**
- *print_list - This is the entry point of the code
- *@h: iudreigr
- *Return:0 Success
+ *print_list - rgesestger
+ *@h: sdfvdzsrfv
+ *
+ *Return: the number of nodes printed
  */
 size_t print_list(const list_t *h)
 {
-	size_t i = 0;
+	size_t s = 0;
 
-	while (h != NULL)
+	while (h)
 	{
-		if (h->str == NULL)
+		if (!h->str)
 			printf("[0] (nil)\n");
 		else
-			printf("[%d] %s\n", h->len, h->str);
+			printf("[%u] %s\n", h->len, h->str);
 		h = h->next;
-		i++;
+		s++;
 	}
-	return (i);
+	return (s);
 }
