@@ -1,38 +1,30 @@
 #include "lists.h"
 /**
  **add_node_end - This is the entry point of the code
- *@head: junfvie
- *@str: iuj
+ *@head: oifgmvedf
+ *@str: oningfb
  *Return:0 Success
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *new, *i;
-	size_t n;
+	list_t *ptr, *temp;
 
-	new = malloc(sizeof(list_t));
-	if (new == NULL)
+	ptr = *head;
+	temp = malloc(sizeof(list_t));
+	if (temp == NULL)
 		return (NULL);
-
-	new->str = strdup(str);
-
-	for (n = 0; str[n]; n++)
-		;
-
-	new->len = n;
-	new->next = NULL;
-	i = *head;
-
-	if (i == NULL)
+	temp->str = strdup(str);
+	temp->len = strlen(str);
+	temp->next = NULL;
+	if (*head == NULL)
 	{
-		*head = new;
+		*head = temp;
+		return (temp);
 	}
-	else
+	while (ptr->next != NULL)
 	{
-		while (i->next != NULL)
-			i = i->next;
-		i->next = new;
+		ptr = ptr->next;
 	}
-
-	return (*head);
+	ptr->next = temp;
+	return (temp);
 }
