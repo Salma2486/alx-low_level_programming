@@ -1,18 +1,17 @@
 #include "lists.h"
 /**
- *free_list - wpeofimkpewrf
- *@head: wlrokeofir
- *Return: 0
+ *free_list - This is the entry point of the code
+ *@head: kjfkreu
+ *Return:0 Success
  */
-
 void free_list(list_t *head)
 {
-	list_t *c;
+	list_t *temp;
 
-	while ((c = head) != NULL)
+	while (temp != NULL)
 	{
-		head = head->next;
-		free(c->str);
-		free(c);
+		temp = temp->next;
+		free(head);
+		head = temp;
 	}
 }
