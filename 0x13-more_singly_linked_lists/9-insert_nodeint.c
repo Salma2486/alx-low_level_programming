@@ -9,7 +9,7 @@
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
 	listint_t *ptr, *ptr2;
-	int i;
+	unsigned int i;
 
 	ptr2 = malloc(sizeof(listint_t));
 	ptr = *head;
