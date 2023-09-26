@@ -18,7 +18,7 @@ listint_t *find_listint_loop(listint_t *head)
 		if (head == ptr)
 		{
 			head = p;
-			p =  p2;
+			p =  ptr;
 			while (1)
 			{
 				ptr = p;
