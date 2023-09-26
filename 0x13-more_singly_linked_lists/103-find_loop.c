@@ -1,3 +1,9 @@
+#include "lists.h"
+/**
+ **find_listint_loop - This is the entry point of the code
+ *@head: kdjfgunvedrj
+ *Return:0 Success
+ */
 listint_t *find_listint_loop(listint_t *head)
 {
 	listint_t *ptr;
