@@ -1,4 +1,9 @@
 #include "lists.h"
+/**
+ *print_listint_safe - This is the entry point of the code
+ *@head: lidbljo
+ *Return:0 Success
+ */
 size_t print_listint_safe(const listint_t *head)
 {
 	const listint_t *ptr = head, *temp = head;
