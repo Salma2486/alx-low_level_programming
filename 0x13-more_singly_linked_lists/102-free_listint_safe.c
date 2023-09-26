@@ -1,33 +1,38 @@
-listint_t *find_listint_loop(listint_t *head)
+#include "lists.h"
+/**
+ *free_listint_safe - This is the entry point of the code
+ *@h: kdufdkhj
+ *Return:0 Success
+ */
+size_t free_listint_safe(listint_t **h)
 {
-	listint_t *ptr;
-	listint_t *p;
+	size_t len = 0;
+	int diff;
+	listint_t *temp;
 
-	ptr = head;
-	p = head;
-	while (head && ptr && tr->next)
+	if (!h || !*h)
+		return (0);
+
+	while (*h)
 	{
-		head = head->next;
-		ptr = ptr->next->next;
-
-		if (head == ptr)
+		diff = *h - (*h)->next;
+		if (diff > 0)
 		{
-			head = p;
-			p =  ptr;
-			while (1)
-			{
-				ptr = p;
-				while (ptr->next != head && ptr->next != p)
-				{
-					ptr = ptr->next;
-				}
-				if (ptr->next == head)
-					break;
-
-				head = head->next;
-			}
-			return (ptr->next);
+			temp = (*h)->next;
+			free(*h);
+			*h = temp;
+			len++;
+		}
+		else
+		{
+			free(*h);
+			*h = NULL;
+			len++;
+			break;
 		}
 	}
-	return (NULL);
+
+	*h = NULL;
+
+	return (len);
 }
