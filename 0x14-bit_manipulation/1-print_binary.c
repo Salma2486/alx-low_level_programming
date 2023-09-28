@@ -6,24 +6,19 @@
  */
 void print_binary(unsigned long int n)
 {
-	unsigned long int j;
+	int i;
 
-	if (n == 0)
+	if (n >> 0)
+	{
+		if (n >> 1)
+		{
+			print_binary(n >> 1);
+		}
+		i = (n & 1);
+		printf("%d", i);
+	}
+	else
 	{
 		printf("0");
-		return;
-	}
-	while (n != 0)
-	{
-		j = n >> 1;
-		print_binary(j);
-		if (n == (j * 2))
-		{
-			printf("0");
-		}
-		else
-		{
-			printf("1");
-		}
 	}
 }
