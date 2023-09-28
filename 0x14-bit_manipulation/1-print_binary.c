@@ -13,11 +13,17 @@ void print_binary(unsigned long int n)
 		printf("0");
 		return;
 	}
-	j = n >> 1;
-	print_binary(n >> 1);
-	if (n == (j * 2))
-		printf("0");
-	else
-		printf("1");
-	n = j;
+	while (n != 0)
+	{
+		j = n >> 1;
+		print_binary(j);
+		if (n == (j * 2))
+		{
+			printf("0");
+		}
+		else
+		{
+			printf("1");
+		}
+	}
 }
