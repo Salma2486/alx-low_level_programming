@@ -52,10 +52,5 @@ int div(int a, int b)
 */
 int mod(int a, int b)
 {
-	if (b == 0)
-	{
-		printf("Error");
-		return (0);
-	}
 	return (a % b);
 }
