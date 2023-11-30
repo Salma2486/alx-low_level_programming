@@ -20,6 +20,10 @@ hash_table_t *hash_table_create(unsigned long int size)
 		free(hash_table);
 		return (NULL);
 	}
+	for (unsigned long int i = 0; i < size; ++i)
+	{
+		hash_table->array[i] = NULL;
+	}
 	hash_table->size = size;
 	return (hash_table);
 }
