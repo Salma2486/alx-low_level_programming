@@ -1,3 +1,4 @@
+#include "hash_tables.h"
 /**
  *key_index - This is the entry point of the code
  *@key: jnfvikfv
