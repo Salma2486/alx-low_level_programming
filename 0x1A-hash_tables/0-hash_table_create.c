@@ -1,7 +1,7 @@
 #include "hash_tables.h"
 /**
- *main - This is the entry point of the code
- *
+ *hash_table_create - This is the entry point of the code
+ *@size: kagerfreqiu
  *Return:0 Success
  */
 hash_table_t *hash_table_create(unsigned long int size)
