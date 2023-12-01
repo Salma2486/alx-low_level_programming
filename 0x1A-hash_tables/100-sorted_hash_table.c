@@ -1,6 +1,8 @@
 #include "hash_tables.h"
+
 shash_node_t *create_snode(const char *key, const char *value);
 void insert_snode(shash_table_t *ht, shash_node_t *new_node);
+
 /**
  * shash_table_create - Creates a sorted hash table
  * @size: The size of the array
